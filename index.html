@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Selectors Cheat Sheet</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>CSS Selectors Cheat Sheet</h1>
+    <h2>Simple Selectors</h2>
+    <table>
+      <thead>
+        <th>Selector</th>
+        <th>Example</th>
+        <th>Description</th>
+        <th>Notes</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ID</td>
+          <td class="code">#name</td>
+          <td>Selects the element with id="name"</td>
+          <td>
+            Can only be used once per page. Highly specific, overriding less
+            specific selectors.
+          </td>
+        </tr>
+        <tr>
+          <td>class</td>
+          <td class="code">.name</td>
+          <td>Selects all elements with class="name"</td>
+          <td>
+            Can be used multiple times in a page.
+          </td>
+        </tr>
+        <tr>
+          <td>element</td>
+          <td class="code">h1</td>
+          <td>Selects the &lt;h1&gt; element</td>
+          <td>Can be used to select any HTML element.</td>
+        </tr>
+        <tr>
+          <td>grouping</td>
+          <td class="code">.name, h1</td>
+          <td>
+            Selects all elements with class="name" and the &lt;h1&gt; element
+          </td>
+          <td>
+            Used to apply same styling rules to multiple selectors, making code
+            more efficient and easier to read.
+          </td>
+        </tr>
+        <tr>
+          <td>universal</td>
+          <td class="code">*</td>
+          <td>Selects all HTML elements</td>
+          <td>Commonly used to remove browser defaults. Low specificity.</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
